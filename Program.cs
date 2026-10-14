@@ -10,6 +10,9 @@ namespace MunicipalServicesApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // No database to connect to anymore - issues are stored in memory
+            // for the lifetime of the running application (see IssueManager).
             Application.Run(new MainMenuForm());
         }
     }
